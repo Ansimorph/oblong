@@ -30,7 +30,7 @@ fi
 
 _venv() {
   local venv
-  if (( $VIRTUAL_ENV )); then
+  if ! [[ $VIRTUAL_ENV ]]; then
     venv="($(basename $VIRTUAL_ENV)) "
   fi
   print -n "${venv}"
