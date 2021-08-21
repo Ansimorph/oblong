@@ -3,8 +3,9 @@ oblong
 
 A simple bash-insprired prompt for [ZIM], the ZSH-IMproved shell. 
 
-<img width="706" src="https://raw.githubusercontent.com/Ansimorph/oblong/main/screenshot.png">
-<img width="619" src="https://raw.githubusercontent.com/Ansimorph/oblong/main/screenshot2.png">
+
+<img width="706" src="https://raw.githubusercontent.com/Ansimorph/oblong/main/screenshot.png" alt="Tango Dark Theme">
+<img width="619" src="https://raw.githubusercontent.com/Ansimorph/oblong/main/screenshot2.png" alt="Nord Theme">
 
 This prompt is based on [gitster] and [basher].
 
