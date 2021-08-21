@@ -1,6 +1,6 @@
 # oblong
 
-A simple bash-insprired prompt for [ZIM], the ZSH-IMproved shell.
+A simple bash-inspired prompt for [ZIM], the ZSH-IMproved shell.
 
 
 <img width="706" src="https://raw.githubusercontent.com/Ansimorph/oblong/main/screenshot.png" alt="Tango Dark Theme">
