@@ -12,6 +12,7 @@ What does it show?
 ------------------
 
   * Red `◼` when last command failed, white otherwise.
+  * Current user. Red if user is root.
   * Current working directory, relative to the git root when in a git repo.
   * Current git branch name, or commit short hash when in ['detached HEAD' state].
   * Red `◌` when in a dirty git working tree, green `◌` when in a clean one.
