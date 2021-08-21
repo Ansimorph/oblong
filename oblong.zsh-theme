@@ -1,6 +1,6 @@
 # vim:et sts=2 sw=2 ft=zsh
 #
-# Basher theme
+# Oblong theme
 #
 # Requires the `git-info` zmodule to be included in the .zimrc file.
 
