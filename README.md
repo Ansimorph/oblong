@@ -27,8 +27,8 @@ formats, after the theme has been initialized:
 | ------------ | ----------------- | ------------- |
 | branch       | Branch name       | `%b`          |
 | commit       | Commit short hash | `%c`          |
-| clean        | Clean state       | `%F{green} ◌`  |
-| dirty        | Dirty state       | `%F{yellow} ◌` |
+| clean        | Clean state       | `%F{green} ◌` |
+| dirty        | Dirty state       | `%F{red} ◌`   |
 
 Use the following command to change the value of a context format:
 
