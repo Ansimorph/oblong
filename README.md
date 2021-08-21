@@ -1,10 +1,10 @@
-square
+oblong
 =======
 
 A simple bash-insprired prompt for [ZIM], the ZSH-IMproved shell. 
 
-<img width="706" src="https://raw.githubusercontent.com/Ansimorph/square/main/screenshot.png">
-<img width="619" src="https://raw.githubusercontent.com/Ansimorph/square/main/screenshot2.png">
+<img width="706" src="https://raw.githubusercontent.com/Ansimorph/oblong/main/screenshot.png">
+<img width="619" src="https://raw.githubusercontent.com/Ansimorph/oblong/main/screenshot2.png">
 
 This prompt is based on [gitster] and [basher].
 
