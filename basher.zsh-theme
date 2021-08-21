@@ -11,7 +11,7 @@ _prompt_basher_pwd() {
   else
     current_dir=${(%):-%~}
   fi
-  print -n "%B%F{blue}${current_dir}%b"
+  print -n "%F{blue}${current_dir}%b"
 }
 
 setopt nopromptbang prompt{cr,percent,sp,subst}
@@ -20,8 +20,8 @@ typeset -gA git_info
 if (( ${+functions[git-info]} )); then
   zstyle ':zim:git-info:branch' format '%b'
   zstyle ':zim:git-info:commit' format '%c'
-  zstyle ':zim:git-info:clean' format '%F{green}⬤'
-  zstyle ':zim:git-info:dirty' format '%F{red}⬤'
+  zstyle ':zim:git-info:clean' format '%F{green}●'
+  zstyle ':zim:git-info:dirty' format '%F{red}●'
   zstyle ':zim:git-info:keys' format \
       'prompt' ' %F{blue}%b%c%C%D '
 
@@ -36,5 +36,5 @@ _venv() {
   print -n "${venv}"
 }
 
-PS1='$(_venv)%B%(!:%F{red}:%F{green})%n%f%F:$(_prompt_basher_pwd)%B${(e)git_info[prompt]}%f%(!:#:$) '
+PS1='$(_venv)%(!:%F{red}:%F{green})%n%f%F:$(_prompt_basher_pwd)${(e)git_info[prompt]}%f%(!:#:$) '
 RPS1='%(?::%F{red}$?)'
