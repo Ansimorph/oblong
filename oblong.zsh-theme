@@ -20,8 +20,8 @@ typeset -gA git_info
 if (( ${+functions[git-info]} )); then
   zstyle ':zim:git-info:branch' format '%b'
   zstyle ':zim:git-info:commit' format '%c'
-  zstyle ':zim:git-info:clean' format '%F{green} ◌'
-  zstyle ':zim:git-info:dirty' format '%F{red} ◌'
+  zstyle ':zim:git-info:clean' format '%F{green} ◍'
+  zstyle ':zim:git-info:dirty' format '%F{red} ◍'
   zstyle ':zim:git-info:keys' format \
       'prompt' ' %F{white}%b%c%C%D '
 
