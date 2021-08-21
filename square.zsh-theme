@@ -36,5 +36,5 @@ _venv() {
   print -n "${venv}"
 }
 
-PS1='◼ $(_venv)%(!:%F{red}:%F{white})%n%f%F:$(_prompt_basher_pwd)${(e)git_info[prompt]}%f%(!:#:$) '
+PS1='%(?:%F{white}:%F{red})◼ $(_venv)%(!:%F{red}:%F{white})%n%f%F:$(_prompt_basher_pwd)${(e)git_info[prompt]}%f%(!:#:$) '
 RPS1='%(?::%F{red}$?)'
