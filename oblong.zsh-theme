@@ -14,6 +14,8 @@ _prompt_basher_pwd() {
   print -n "%F{blue}${current_dir}%b"
 }
 
+VIRTUAL_ENV_DISABLE_PROMPT=1
+
 setopt nopromptbang prompt{cr,percent,sp,subst}
 
 typeset -gA git_info
@@ -28,13 +30,5 @@ if (( ${+functions[git-info]} )); then
   autoload -Uz add-zsh-hook && add-zsh-hook precmd git-info
 fi
 
-_venv() {
-  local venv
-  if ! [[ -z $VIRTUAL_ENV ]]; then
-    venv="($(basename $VIRTUAL_ENV)) "
-  fi
-  print -n "${venv}"
-}
-
-PS1='%(?:%F{white}:%F{red})◼ $(_venv)%(!:%F{red}:%F{white})%n%f%F:$(_prompt_basher_pwd)${(e)git_info[prompt]} %f%(!:#:$) '
+PS1='%(?:%F{white}:%F{red})◼ ${VIRTUAL_ENV:+"(${VIRTUAL_ENV:t}) "}%(!:%F{red}:%F{white})%n%f%F:$(_prompt_basher_pwd)${(e)git_info[prompt]} %f%(!:#:$) '
 RPS1='%(?::%F{red}$?)'

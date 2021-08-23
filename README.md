@@ -11,6 +11,7 @@ This prompt is based on [gitster] and [basher].
 ## What does it show?
 
 - Red `◼` when last command failed, white otherwise.
+- Python [venv] indicator.
 - Current user. Red if user is root.
 - Current working directory, relative to the git root when in a git repo.
 - Current git branch name, or commit short hash when in ['detached HEAD' state].
@@ -38,10 +39,10 @@ For detailed information, check the [git-info documentation].
 
 Requires Zim's [git-info] module to show git information.
 
-[gitster]: https://github.com/shashankmehta/dotfiles/blob/master/thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme
 ['detached head' state]: http://gitfaq.org/articles/what-is-a-detached-head.html
 [git-info documentation]: https://github.com/zimfw/git-info/blob/master/README.md#theming
 [git-info]: https://github.com/zimfw/git-info
 [zim]: https://github.com/zimfw/zimfw
 [gitster]: https://github.com/zimfw/gitster
 [basher]: https://gitlab.com/Spriithy/basher
+[venv]: https://docs.python.org/3/library/venv.html
